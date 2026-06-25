@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+}
+
+/* NAVBAR */
+
+.navbar h1{
+    font-style: italic;
+       color:black;
+    font-size: 40px;
+  
+}
+
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: sticky;
+    top: 0;
+     color: black;
+    height: 70px;
+    background-color: gray;
+     width: 100%;
+    box-shadow: gray 7px 7px 50px;
+    position: sticky;
+    z-index: 999;
+    
+}
+
+.navbar .navbar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1600px;
+
+}
+
+.navbar .navbar1 h1{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+   
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border:2px solid transparent;
+    white-space: nowrap;
+}
+
+.navbar ul a:hover{
+    background-color: lightskyblue;
+    color: white;
+    border:2px solid white;
+}
+
+
+/* CALCULATOR */    
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.calculator{
+    width: 850px;
+    height: 480px;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: sti;
+    flex-direction: column;  
+    padding: 20px;
+  
+}
+.calculator   input{
+    border: 0;
+    outline: 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), -8px -8px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 4px;
+    
+}
+.calculator .display input{
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 80px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+      font-weight: 800;
+      font-style: inherit;
+}
+.calculator input.equal{
+    background-color: #ff9500;
+    box-shadow: none;
+    width: 145px;
+}
+.calculator input.operator{
+    background-color: #ff9500;
+    box-shadow: none;
+}
